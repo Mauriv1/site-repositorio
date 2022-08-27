@@ -1,11 +1,67 @@
-
 <body>
-  <header class="u-clearfix u-header u-header" id="sec-5146">
-    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <a href="#" class="u-image u-logo u-image-1">
-        <img src="#" class="u-logo-image u-logo-image-1" width="500px" height="200px">
-      </a>
-      
+  <header class="head">
+    <div class="row">
+      <div class="col-4">
+        <picture>
+          <img src="../assets/images/logo.JPG" width="40px" height="50px" alt="Logo">
+        </picture>
+        <a> GlobalLearningTech</a>
+      </div>
+      <div class="col-8">
+        <nav class="navbar navbar-dark">
+          <!-- Navbar content -->
+          <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: black;">
+              <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                  aria-expanded="false" aria-label="Toggle navigation"></button>
+              <div class="collapse navbar-collapse" id="collapsibleNavId">
+                  <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Inicio <span class="visually-hidden">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownId">
+                              <a class="dropdown-item" href="#">Asesorias</a>
+                              <a class="dropdown-item" href="#">Club de tareas</a>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+        </nav>
+      </div>
     </div>
+    
+    
   </header>
+    <div class="container content">
+      <router-outlet></router-outlet>
+    </div>
+  <footer class="footer">
+    <div>
+      <div class="contenedor-grid contenedor">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <div class="demo">
+              
+              <span><a href="#"><img src="../assets/png/005-facebook.png" alt="facebook"></a></span>
+              <span><a href="#"><img src="../assets/png/002-instagram.png" alt="instagram"></a></span>
+              <span><a href="#"><img src="../assets/png/004-whatsapp.png" alt="whatsapp"></a></span>
+              <span><a href="#"><img src="../assets/png/009-telegrama.png" alt="telegram"></a></span>
+              
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+      <p style="text-align:center">Derechos Reservados. ISC Mauricio Vergara Miranda.</p>
+    </div>
+  </footer>
 </body>
