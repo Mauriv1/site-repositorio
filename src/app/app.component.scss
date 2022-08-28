@@ -12,12 +12,13 @@
     color: azure;
 }
 
-.main{
-    min-height: calc(125vh - 80px  - 60px);
-    background-color: antiquewhite;
+.fondo-header {
+min-height: calc(115vh - 80px  - 60px);
+background: url("../assets/images/back.jpg") no-repeat;
+opacity: 0.85;
 }
-
+ 
 .foot{
     min-height: calc(20vh - 80px  - 60px);
-    background-color: azure; 
+    background-color: rgb(9, 226, 226); 
 }
