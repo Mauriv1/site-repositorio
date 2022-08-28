@@ -1,6 +1,15 @@
-.head{
-    /* min-height: calc(25vh - 80px  - 60px); */
+.head{  
+    min-height: calc(20vh - 80px  - 60px);
+    padding: 20px;
     background-color: black;
+}
+
+.offcanvas{
+    background-color: black;
+}
+
+.offcanvas-title{
+    color: azure;
 }
 
 .main{
@@ -9,6 +18,6 @@
 }
 
 .foot{
-    /* min-height: calc(25vh - 80px  - 60px); */
+    min-height: calc(20vh - 80px  - 60px);
     background-color: azure; 
 }

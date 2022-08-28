@@ -1,18 +1,25 @@
 <body>
   <header class="head">    
-    <nav class="navbar navbar-dark bg-dark"> 
+    <nav class="navbar navbar-dark"> 
       <div class="container-fluid">        
-        <div class="bg-dark p-4">
+        <div class="tittle">
           <span class="text-muted">LOGO</span>
           <h5 class="text-white h4">GlobaLearningTech</h5>          
-        </div>        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>        
+        </div>              
+        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="../assets/png/menu.png" height ="20" width="30"></button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+            <button type="button" class="btn-close bg-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            ...
+          </div>
+        </div>       
       </div>  
     </nav>
   </header>
-
+  
   <div class="main">
 
   </div>
