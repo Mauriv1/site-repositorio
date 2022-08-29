@@ -1,38 +1,28 @@
 <body>
-  <header class="head">   
-    <div class="row">        
-      <div class="tittle col">
-        <img class="logo" src="../assets/images/logo.png" alt="logo">
-        <div class="tittle1">Tecnobal</div>     
-        <div class="btn-home col"><button type="button" class="btn" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</button></div> 
-        <nav class="navbar navbar-expand-sm navbar-dark">          
-          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-              aria-expanded="false" aria-label="Toggle navigation"></button>
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">                  
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" [routerLink]="['/nosotros']" routerLinkActive="router-link-active">Nosotros</a>
-                    <a class="dropdown-item" [routerLink]="['/servicios']" routerLinkActive="router-link-active">Servicios</a>
-                    <a class="dropdown-item" [routerLink]="['/contacto']" routerLinkActive="router-link-active">Contacto</a>
-                </div>
-              </li>
-            </ul>              
-          </div>
-        </nav>  
-      </div>       
-    </div>    
+  <header class="head">
+    <div id="header">
+      <h1><a href="#">COMPANY NAME</a></h1>
+      <div class="description">COMPANY TAGLINE</div>
+    </div>
+    
+    <div id="menulinks">
+      <a class="active" [routerLink]="['/home']" routerLinkActive="router-link-active"><span>Home</span></a>
+      <a [routerLink]="['/nosotros']" routerLinkActive="router-link-active"><span>Nosotros</span></a>
+      <a [routerLink]="['/servicios']" routerLinkActive="router-link-active"><span>Servicios</span></a>
+      <a [routerLink]="['/contacto']" routerLinkActive="router-link-active"><span>Contacto</span></a>
+    </div>
   </header>
 
-  <div class="main">
-    <router-outlet>
-      
-    </router-outlet>
-  </div>
+  <section id="main">
+    <div class="container"c>
+      <router-outlet>
+    
+      </router-outlet>
+    </div>
+  </section>
 
   <footer class="foot">
-    <div>
+    <div id="footer">
       <div class="social">      
         <div class="social-div">
           <a href="https://www.facebook.com/"><img src="../assets/png/005-facebook.png" alt="facebook"></a>

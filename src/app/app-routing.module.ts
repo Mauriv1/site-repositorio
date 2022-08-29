@@ -7,6 +7,7 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 
 const routes: Routes = [
   {path:"", pathMatch:'full',redirectTo:'home'},
+  {path:"home", component:HomeComponent},
   {path:"nosotros", component:NosotrosComponent},
   {path:"servicios", component:ServiciosComponent},
   {path:"contacto", component:ContactoComponent}
