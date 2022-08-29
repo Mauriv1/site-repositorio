@@ -3,8 +3,8 @@
     <nav class="navbar navbar-dark"> 
       <div class="container-fluid">        
         <div class="tittle">
-          <span class="text-muted">LOGO</span>
-          <h5 class="text-white h4">GlobaLearningTech</h5>          
+          <img class="logo" src="../assets/images/logo.png" alt="logo">
+          <div class="tittle1">Tecnobal</div>
         </div>              
         <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="../assets/png/menu.png" height ="20" width="30"></button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -21,19 +21,24 @@
   </header>
 
   <div class="main">
-    <div class="fondo-header">
-      
-      <div>
-        <th>
-          <tr><button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block>boton</button></tr>
-          <tr>hety</tr>
-        </th>
-      </div>
-      
-    </div>
+    <router-outlet></router-outlet>
   </div>
 
   <footer class="foot">
-    
+    <div>
+      <div class="social">      
+        <div class="social-div">
+          <a href="https://www.facebook.com/"><img src="../assets/png/005-facebook.png" alt="facebook"></a>
+          <a href="https://twitter.com/"><img src="../assets/png/001-gorjeo.png" alt="twitter"></a>
+          <a href="https://www.instagram.com/"><img src="../assets/png/002-instagram.png" alt="instagram"></a>
+          <a href="https://telegram.org/"><img src="../assets/png/009-telegrama.png" alt="telegram"></a>
+        </div>        
+      </div>
+      <span class="credits">
+        <div>
+          <span class="copyrigth">Todos los derechos reservados por ISC Mauricio Vergara Miranda</span>
+        </div>
+      </span>
+    </div>
   </footer>
 </body>
