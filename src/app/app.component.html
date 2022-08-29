@@ -1,28 +1,33 @@
 <body>
-  <header class="head">    
-    <nav class="navbar navbar-dark"> 
-      <div class="container-fluid">        
-        <div class="tittle">
-          <img class="logo" src="../assets/images/logo.png" alt="logo">
-          <div class="tittle1">Tecnobal</div>
-        </div>              
-        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="../assets/png/menu.png" height ="20" width="30"></button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-            <h4 class="offcanvas-title" id="offcanvasRightLabel">Menu</h4>
-            <button type="button" class="btn-close bg-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <header class="head">   
+    <div class="row">        
+      <div class="tittle col">
+        <img class="logo" src="../assets/images/logo.png" alt="logo">
+        <div class="tittle1">Tecnobal</div>     
+        <div class="btn-home col"><button type="button" class="btn" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</button></div> 
+        <nav class="navbar navbar-expand-sm navbar-dark">          
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation"></button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">                  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" [routerLink]="['/nosotros']" routerLinkActive="router-link-active">Nosotros</a>
+                    <a class="dropdown-item" [routerLink]="['/servicios']" routerLinkActive="router-link-active">Servicios</a>
+                    <a class="dropdown-item" [routerLink]="['/contacto']" routerLinkActive="router-link-active">Contacto</a>
+                </div>
+              </li>
+            </ul>              
           </div>
-          <div class="offcanvas-body">
-            <a [routerLink]="['/Nosotros']" routerLinkActive="router-link-active">Nosotros</a>
-          </div>
-        </div>       
-      </div>  
-    </nav>
+        </nav>  
+      </div>       
+    </div>    
   </header>
 
   <div class="main">
     <router-outlet>
-      <a [routerLink]="['/home']" routerLinkActive="router-link-active"></a>
+      
     </router-outlet>
   </div>
 
@@ -44,3 +49,5 @@
     </div>
   </footer>
 </body>
+
+
